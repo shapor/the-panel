@@ -1,6 +1,6 @@
 # The Panel
 
-Simulate the full [Skillathon 2026](https://luma.com/1khurilu) judge panel using Claude Code. [View the presentation](https://htmlpreview.github.io/?https://github.com/shapor/the-panel/blob/main/presentation.html).
+Simulate the full [Skillathon 2026](https://luma.com/1khurilu) judge panel using Claude Code. [View the presentation](https://shapor.github.io/the-panel/presentation.html).
 
 Paste in any submission — pitch transcript, code, skills, screenshots, whatever — and get scored by 7 AI personas modeled after the real hackathon speakers, organizers, and judges.
 
