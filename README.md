@@ -1,8 +1,8 @@
 # The Panel
 
-Simulate the full [Skillathon 2026](https://luma.com/1khurilu) judge panel using Claude Code.
+Simulate the full [Skillathon 2026](https://luma.com/1khurilu) judge panel using Claude Code. [View the presentation](https://htmlpreview.github.io/?https://github.com/shapor/the-panel/blob/main/presentation.html).
 
-Paste in any submission — pitch transcript, code, skills, screenshots, whatever — and get scored by 7 AI personas modeled after the real hackathon judges and organizers.
+Paste in any submission — pitch transcript, code, skills, screenshots, whatever — and get scored by 7 AI personas modeled after the real hackathon speakers, organizers, and judges.
 
 ## What is Skillathon?
 
@@ -20,17 +20,19 @@ claude
 
 Then just paste in what you want judged. Transcripts, repos, recordings, raw ideas — anything goes.
 
-## The Judges
+## The Panel
 
-| Judge | Org | Evaluates |
-|-------|-----|-----------|
-| Furqan Rydhan | Founders Inc / AppLovin | Product potential, ambition, autonomy |
-| Bence Nagy | Anthropic | Skill architecture, code quality, verification |
-| Ryan Marten | Harbor / Terminal-Bench | Task difficulty, realism, reproducibility |
-| Xiangyi Li | BenchFlow / SkillsBench | Skill delta, domain impact, methodology |
-| Belinda Mo | Sundial | Reusability, ecosystem fit, community value |
-| Roey Ben Chaim | Zenity | Security, anti-cheating, governance |
-| Grace Zhang | World Intelligence | Physical world relevance, data infrastructure |
+All personas are based on real people associated with Skillathon 2026 — organizers, speakers, and judges.
+
+| Persona | Role | Org | Evaluates |
+|---------|------|-----|-----------|
+| Xiangyi Li | Organizer | BenchFlow / SkillsBench | Skill delta, domain impact, methodology |
+| Belinda Mo | Organizer | Sundial | Reusability, ecosystem fit, community value |
+| Roey Ben Chaim | Organizer | Zenity | Security, anti-cheating, governance |
+| Grace Zhang | Organizer | World Intelligence | Physical world relevance, data infrastructure |
+| Furqan Rydhan | Speaker / Host | Founders Inc / AppLovin | Product potential, ambition, autonomy |
+| Bence Nagy | Speaker | Anthropic | Skill architecture, code quality, verification |
+| Ryan Marten | Speaker | Harbor / Terminal-Bench | Task difficulty, realism, reproducibility |
 
 Each persona has a detailed background, weighted scoring rubric, and characteristic evaluation style drawn from their public work, talks, and writings.
 
