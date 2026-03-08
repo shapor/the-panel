@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Panel — Simulate Hackathon Judges</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+        .reveal pre { font-size: 0.55em; }
+        .reveal code { color: #e7ad52; }
+        .reveal .highlight { color: #5cb85c; font-weight: bold; }
+        .reveal .warn { color: #f0ad4e; font-weight: bold; }
+        .reveal .danger { color: #d9534f; font-weight: bold; }
+        .reveal .terminal { background: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; text-align: left; font-family: 'Courier New', monospace; }
+        .reveal ul { font-size: 0.9em; }
+        .reveal .small { font-size: 0.7em; }
+        .reveal table { font-size: 0.75em; }
+        .reveal td, .reveal th { padding: 8px 12px; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Title -->
+            <section>
+                <h1>The Panel</h1>
+                <h3>Simulate Your Hackathon Judges</h3>
+                <p style="margin-top: 60px; font-size: 0.8em;">Built for <a href="https://luma.com/1khurilu">Skillathon 2026</a></p>
+                <p style="font-size: 0.6em; opacity: 0.7;">March 7, 2026 &middot; Founders Inc, SF</p>
+            </section>
+
+            <!-- The Idea -->
+            <section>
+                <h2>The Idea</h2>
+                <p style="font-size: 1.2em; margin-top: 40px;">What if you could test your submission</p>
+                <p style="font-size: 1.2em;" class="fragment">against the actual judge panel</p>
+                <p style="font-size: 1.5em; margin-top: 40px; color: #5cb85c;" class="fragment"><strong>before you present?</strong></p>
+            </section>
+
+            <!-- How It Works -->
+            <section>
+                <h2>Three Commands</h2>
+                <pre class="terminal"><code>$ git clone https://github.com/shapor/the-panel
+$ cd the-panel
+$ claude</code></pre>
+                <p style="margin-top: 40px; font-size: 1.1em;" class="fragment">
+                    Then paste in your pitch. That's it.
+                </p>
+            </section>
+
+            <!-- What You Can Paste -->
+            <section>
+                <h2>Paste In Anything</h2>
+                <div style="margin-top: 40px; font-size: 1em;">
+                    <p class="fragment">Pitch transcripts or recordings</p>
+                    <p class="fragment">GitHub repos or code</p>
+                    <p class="fragment">SKILL.md files</p>
+                    <p class="fragment">Screenshots of demos</p>
+                    <p class="fragment">Raw elevator pitches</p>
+                    <p class="fragment" style="margin-top: 30px; color: #e7ad52;"><strong>Any format. It figures it out.</strong></p>
+                </div>
+            </section>
+
+            <!-- The 7 Judges -->
+            <section>
+                <h2>7 Real Judge Personas</h2>
+                <table style="width: 100%; margin-top: 20px;">
+                    <thead>
+                        <tr><th>Judge</th><th>Org</th><th>Lens</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr class="fragment"><td><strong>Furqan Rydhan</strong></td><td>Founders Inc</td><td>Product potential, autonomy</td></tr>
+                        <tr class="fragment"><td><strong>Bence Nagy</strong></td><td>Anthropic</td><td>Skill architecture, code quality</td></tr>
+                        <tr class="fragment"><td><strong>Ryan Marten</strong></td><td>Harbor</td><td>Task difficulty, reproducibility</td></tr>
+                        <tr class="fragment"><td><strong>Xiangyi Li</strong></td><td>BenchFlow</td><td>Skill delta, domain impact</td></tr>
+                        <tr class="fragment"><td><strong>Belinda Mo</strong></td><td>Sundial</td><td>Reusability, ecosystem fit</td></tr>
+                        <tr class="fragment"><td><strong>Roey Ben Chaim</strong></td><td>Zenity</td><td>Security, governance</td></tr>
+                        <tr class="fragment"><td><strong>Grace Zhang</strong></td><td>World Intelligence</td><td>Physical world, data infra</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- What Each Persona Contains -->
+            <section>
+                <h2>Not Generic Prompts</h2>
+                <div style="margin-top: 40px;">
+                    <p class="fragment"><strong>Real backgrounds</strong> &mdash; career history, companies, papers</p>
+                    <p class="fragment"><strong>Weighted rubrics</strong> &mdash; each judge scores differently</p>
+                    <p class="fragment"><strong>Characteristic reactions</strong> &mdash; what excites them, what they're skeptical of</p>
+                    <p class="fragment"><strong>Red flags</strong> &mdash; what kills your score with each judge</p>
+                    <p class="fragment"><strong>Voice</strong> &mdash; sample evaluation prompts in their style</p>
+                </div>
+            </section>
+
+            <!-- Example: Furqan -->
+            <section>
+                <h2>Example: Furqan Rydhan</h2>
+                <div style="font-size: 0.85em; margin-top: 20px;">
+                    <p><strong>Background:</strong> Co-founded AppLovin ($180B), built Nebula (autonomous agent platform)</p>
+                    <table style="margin-top: 20px;">
+                        <tr><td>Product potential</td><td class="highlight">30%</td></tr>
+                        <tr><td>Agent autonomy</td><td class="highlight">25%</td></tr>
+                        <tr><td>Ambition / scale</td><td>20%</td></tr>
+                        <tr><td>Builder quality</td><td>15%</td></tr>
+                        <tr><td>Novelty</td><td>10%</td></tr>
+                    </table>
+                    <p style="margin-top: 20px; font-style: italic; opacity: 0.8;">
+                        "Did you build this because YOU needed it? Is it opinionated? Could this be running autonomously tomorrow, making you money while you sleep?"
+                    </p>
+                </div>
+            </section>
+
+            <!-- Example: Xiangyi -->
+            <section>
+                <h2>Example: Xiangyi Li</h2>
+                <div style="font-size: 0.85em; margin-top: 20px;">
+                    <p><strong>Background:</strong> Lead author of SkillsBench, CEO of BenchFlow (backed by Jeff Dean, a16z)</p>
+                    <table style="margin-top: 20px;">
+                        <tr><td>Skill delta</td><td class="highlight">30%</td></tr>
+                        <tr><td>Domain impact</td><td>20%</td></tr>
+                        <tr><td>Skill quality</td><td>20%</td></tr>
+                        <tr><td>Task design</td><td>15%</td></tr>
+                        <tr><td>Ecosystem value</td><td>15%</td></tr>
+                    </table>
+                    <p style="margin-top: 20px; font-style: italic; opacity: 0.8;">
+                        "I wrote the paper on this. Show me the numbers. What's the pass rate without skills? With skills? Is the delta meaningful or just noise?"
+                    </p>
+                </div>
+            </section>
+
+            <!-- The Output -->
+            <section>
+                <h2>What You Get</h2>
+                <pre class="terminal"><code>## Panel Scorecard
+
+| Judge   | Score | Top Praise            | Top Concern           |
+|---------|-------|-----------------------|-----------------------|
+| Furqan  | 4/5   | Real product potential | Needs autonomy story  |
+| Bence   | 5/5   | Clean skill structure  | —                     |
+| Ryan    | 4/5   | Genuine difficulty     | Docker env missing    |
+| Xiangyi | 4/5   | +40pp delta measured   | Only 1 domain         |
+| Belinda | 3/5   | Publishable to Sundial | Niche audience        |
+| Roey    | 5/5   | Security-first design  | —                     |
+| Grace   | 2/5   | N/A                   | Not physical world    |
+
+Panel Average: 3.9/5
+Win Probability: High</code></pre>
+            </section>
+
+            <!-- Why This Is Useful -->
+            <section>
+                <h2>Why Bother?</h2>
+                <div style="margin-top: 40px;">
+                    <p class="fragment" style="font-size: 1.1em;">Identify weak spots <strong>before</strong> you present</p>
+                    <p class="fragment" style="font-size: 1.1em;">See which judges you'll win over and which you won't</p>
+                    <p class="fragment" style="font-size: 1.1em;">Get specific, actionable feedback per evaluator</p>
+                    <p class="fragment" style="font-size: 1.1em;">Iterate your pitch in minutes, not hours</p>
+                </div>
+            </section>
+
+            <!-- How It Works Technically -->
+            <section>
+                <h2>How It Works</h2>
+                <div style="margin-top: 40px; font-size: 0.95em;">
+                    <p class="fragment"><strong>8 skills</strong> in <code>.claude/skills/</code> &mdash; auto-loaded by Claude Code</p>
+                    <p class="fragment"><strong>CLAUDE.md</strong> orchestrates the evaluation flow</p>
+                    <p class="fragment"><strong>Zero dependencies</strong> &mdash; just Claude Code</p>
+                    <p style="margin-top: 40px;" class="fragment">
+                        Each persona: ~60 lines of focused context<br>
+                        <span class="small">Background, rubric, reactions, red flags, voice sample</span>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Meta -->
+            <section>
+                <h2>The Meta Angle</h2>
+                <p style="margin-top: 40px; font-size: 1.1em;" class="fragment">
+                    This is a skill submission...
+                </p>
+                <p style="font-size: 1.3em; margin-top: 30px; color: #e7ad52;" class="fragment">
+                    <strong>...to judges it simulates.</strong>
+                </p>
+                <p style="font-size: 1em; margin-top: 40px; opacity: 0.8;" class="fragment">
+                    "Hey Bence, here's a skill that simulates your evaluation style.<br>Rate it using... yourself."
+                </p>
+            </section>
+
+            <!-- CTA -->
+            <section data-background="#1e1e1e">
+                <h1>The Panel</h1>
+                <p style="font-size: 1.2em; margin-top: 40px;">Know your score before you pitch.</p>
+                <div style="margin-top: 60px; font-size: 0.85em;">
+                    <p><code>git clone https://github.com/shapor/the-panel</code></p>
+                    <p><code>cd the-panel && claude</code></p>
+                </div>
+                <div style="margin-top: 60px; font-size: 0.7em; opacity: 0.7;">
+                    <p><a href="https://luma.com/1khurilu">Skillathon 2026</a> &middot; <a href="https://www.skillsbench.ai/">SkillsBench</a> &middot; <a href="https://www.sundialhub.com/">Sundial</a></p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            backgroundTransition: 'fade',
+            controls: true,
+            progress: true,
+            center: true,
+            width: 1280,
+            height: 720,
+        });
+    </script>
+</body>
+</html>

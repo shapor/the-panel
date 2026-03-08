@@ -1,6 +1,14 @@
 # The Panel
 
-Simulate a full hackathon judge panel using Claude Code. Paste in any submission — pitch transcript, code, skills, screenshots, whatever — and get scored by 7 AI personas modeled after real Skillathon 2026 judges.
+Simulate the full [Skillathon 2026](https://luma.com/1khurilu) judge panel using Claude Code.
+
+Paste in any submission — pitch transcript, code, skills, screenshots, whatever — and get scored by 7 AI personas modeled after the real hackathon judges and organizers.
+
+## What is Skillathon?
+
+[Skillathon](https://www.skillathon.ai/) is the first Agent Skills Hackathon, organized by [BenchFlow](https://www.skillsbench.ai/) (creators of [SkillsBench](https://arxiv.org/abs/2602.12670)) and [Sundial](https://www.sundialhub.com/) (the largest agent skill registry). Participants create agent skills, design benchmark tasks, and prove that skills make agents better — backed by data from 7,308 agent runs across 84 tasks and 11 domains.
+
+**Event**: March 7, 2026 at [Founders Inc](https://founders.inc/), San Francisco
 
 ## Usage
 
@@ -37,3 +45,5 @@ A panel scorecard with:
 ## How it works
 
 The skills live in `.claude/skills/` so Claude Code loads them automatically. The `CLAUDE.md` tells the agent to run the full panel when you share content. No setup, no config, no dependencies.
+
+You can also open `presentation.html` in a browser for a visual overview.
